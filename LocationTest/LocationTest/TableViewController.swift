@@ -13,11 +13,6 @@ class TableViewController: UITableViewController , CLLocationManagerDelegate{
     
     
     var lm:CLLocationManager!
-    
-    let address = "https://api.foursquare.com/v2/"
-    let Client_ID = "ACAO2JPKM1MXHQJCK45IIFKRFR2ZVL0QASMCBCG5NPJQWF2G"
-    let Client_Secret = "YZCKUYJ1WHUV2QICBXUBEILZI1DMPUIDP5SHV043O04FKBHL"
-    let Category_ID = "4bf58dd8d48988d1e0931735"
     var LL=""
     var coffeeStopList:CoffeeShopList?
     var locationStatus : NSString = "Not Started"
@@ -121,8 +116,8 @@ class TableViewController: UITableViewController , CLLocationManagerDelegate{
     */
     func addDatasoures()
     {
-        let url:NSURL = NSURL(string:
-            "\(address)venues/search?ll=\(LL)&categoryId=\(Category_ID)&client_id=\(Client_ID)&client_secret=\(Client_Secret)&v=20150924")!
+        let httphelper = HttpHelper()
+        let url:NSURL = httphelper.GetVenuesSearchAPI(LL)
         
         let request: NSURLRequest = NSURLRequest(URL: url)
         NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue.mainQueue(), completionHandler:{
@@ -146,7 +141,7 @@ class TableViewController: UITableViewController , CLLocationManagerDelegate{
                     }
                     else
                     {
-                        
+                        print(code)
                     }
                     
                     

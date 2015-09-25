@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C8E59991BB4F29F008AB7E0 /* HttpHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8E59981BB4F29F008AB7E0 /* HttpHelper.swift */; settings = {ASSET_TAGS = (); }; };
 		5C94E3BC1BB39B7100873613 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C94E3BB1BB39B7100873613 /* AppDelegate.swift */; };
 		5C94E3C11BB39B7100873613 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C94E3BF1BB39B7100873613 /* Main.storyboard */; };
 		5C94E3C31BB39B7100873613 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C94E3C21BB39B7100873613 /* Assets.xcassets */; };
 		5C94E3C61BB39B7100873613 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C94E3C41BB39B7100873613 /* LaunchScreen.storyboard */; };
-		5C94E3D11BB39B7200873613 /* LocationTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C94E3D01BB39B7200873613 /* LocationTestTests.swift */; };
+		5C94E3D11BB39B7200873613 /* AIPTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C94E3D01BB39B7200873613 /* AIPTest.swift */; };
 		5C94E3DC1BB39B7200873613 /* LocationTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C94E3DB1BB39B7200873613 /* LocationTestUITests.swift */; };
 		5C94E3EA1BB3A4BC00873613 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C94E3E91BB3A4BC00873613 /* TableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		5CD973AF1BB3D572007B3475 /* CoffeeShopList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD973AE1BB3D572007B3475 /* CoffeeShopList.swift */; settings = {ASSET_TAGS = (); }; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5C8E59981BB4F29F008AB7E0 /* HttpHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HttpHelper.swift; path = ../HttpHelper.swift; sourceTree = "<group>"; };
 		5C94E3B81BB39B7100873613 /* LocationTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocationTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C94E3BB1BB39B7100873613 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5C94E3C01BB39B7100873613 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -49,7 +51,7 @@
 		5C94E3C51BB39B7100873613 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5C94E3C71BB39B7100873613 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5C94E3CC1BB39B7200873613 /* LocationTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocationTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5C94E3D01BB39B7200873613 /* LocationTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTestTests.swift; sourceTree = "<group>"; };
+		5C94E3D01BB39B7200873613 /* AIPTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIPTest.swift; sourceTree = "<group>"; };
 		5C94E3D21BB39B7200873613 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5C94E3D71BB39B7200873613 /* LocationTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocationTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C94E3DB1BB39B7200873613 /* LocationTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTestUITests.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 		5C94E3BA1BB39B7100873613 /* LocationTest */ = {
 			isa = PBXGroup;
 			children = (
+				5C8E59981BB4F29F008AB7E0 /* HttpHelper.swift */,
 				5C94E3BB1BB39B7100873613 /* AppDelegate.swift */,
 				5C94E3BF1BB39B7100873613 /* Main.storyboard */,
 				5C94E3C21BB39B7100873613 /* Assets.xcassets */,
@@ -138,7 +141,7 @@
 		5C94E3CF1BB39B7200873613 /* LocationTestTests */ = {
 			isa = PBXGroup;
 			children = (
-				5C94E3D01BB39B7200873613 /* LocationTestTests.swift */,
+				5C94E3D01BB39B7200873613 /* AIPTest.swift */,
 				5C94E3D21BB39B7200873613 /* Info.plist */,
 			);
 			path = LocationTestTests;
@@ -292,6 +295,7 @@
 			files = (
 				5CD973BA1BB40684007B3475 /* TableViewCell.swift in Sources */,
 				5CF78BB71BB434A500AB40D3 /* MapViewController.swift in Sources */,
+				5C8E59991BB4F29F008AB7E0 /* HttpHelper.swift in Sources */,
 				5CD973AF1BB3D572007B3475 /* CoffeeShopList.swift in Sources */,
 				5C94E3BC1BB39B7100873613 /* AppDelegate.swift in Sources */,
 				5CD973B11BB3D79E007B3475 /* CoffeeShopModel.swift in Sources */,
@@ -303,7 +307,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C94E3D11BB39B7200873613 /* LocationTestTests.swift in Sources */,
+				5C94E3D11BB39B7200873613 /* AIPTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
