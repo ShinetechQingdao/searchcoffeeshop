@@ -1,4 +1,4 @@
-# searchcoffeeshop
+# Search Coffee Shop
 Development Information:
 This project is running on SDK 9.0 with iPhone 5s simulator. 
 Develop in xcode 7.0
@@ -13,4 +13,4 @@ https://developer.foursquare.com/docs/venues/categories  (get categoryid for cof
 
 JSON Converter
 Custom TableViewItem
-Locaion will be refershed every 1 minute. It can be changed fro code.
+Locaion will be refershed every 1 minute. It can be changed for code.
